@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold mb-4">Se rendre au domaine</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold py-4 font-title">Se rendre au domaine</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div>
+        <img class="rounded-lg" src="{{ get_url(path="img/bug.jpg") }}" />
         <h2 class="text-2xl font-bold mb-2">En voiture</h2>
         <p class="mb-2">Le Domaine des Evis est accessible en 2h15 de route depuis Paris.</p>
         <p class="mb-2">Google Maps <a href="#" class="underline">[LINK]</a></p>
         <p>Je propose des places disponibles dans ma voiture <a href="#" class="underline">[LINK]</a></p>
       </div>
       <div>
+        <img class="rounded-lg" src="{{ get_url(path="img/train2.jpg") }}" heigh="156px" width: "234px" class="overflow-hidden w-full">
         <h2 class="text-2xl font-bold mb-2">En train</h2>
         <p class="mb-2">La gare de Verneuil-Sur-Avre​ se situe à 12min de voiture du domaine.</p>
         <ul class="list-disc list-inside mb-2">
@@ -20,60 +22,71 @@
           <li>Uber n'est pas disponible dans la région.</li>
         </ul>
       </div>
-    </div>
-    <div class="mt-8">
-      <h2 class="text-2xl font-bold mb-2">Retour de soirée</h2>
-      <p class="mb-2">Une navette sera disponible la nuit du samedi entre 00h et 04h pour vous ramener à votre logement dans un rayon de 15min autour du lieu de la fête.</p>
+        <div>
+            <img class="rounded-lg" src="{{ get_url(path="img/taxi.jpeg") }}" />
+          <h2 class="text-2xl font-bold mb-2">Retour de soirée</h2>
+          <p class="mb-2">Une navette sera disponible la nuit du samedi entre 00h et 04h pour vous ramener à votre logement dans un rayon de 15min autour du lieu de la fête.</p>
+        </div>
     </div>
   </div>
 
-  <div class="bg-gray-200 py-8">
+  <div class="bg-wd-light py-8">
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl font-bold mb-4">Domaine des Evis</h1>
-      <div class="rounded-lg shadow-lg overflow-hidden mb-8">
+      <h1 class="text-4xl font-bold text-center font-title py-4">Domaine des Evis</h1>
+      <div class="rounded-lg text-center overflow-hidden mb-8">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.858595141613!2d0.8911023767771545!3d48.65082027130469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3d9995508bc49%3A0x2c3f7226f7e97507!2sDomaine%20des%20Evis!5e0!3m2!1sfr!2snl!4v1737150310213!5m2!1sfr!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
 
-  <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold mb-4">Se loger dans les environs</h1>
-    <p class="mb-4">Une grande variété de logements sont présents dans les environs du domaine des Evis.</p>
-    <p class="mb-4">Nous vous conseillons de réserver un logement à Verneuil-sur-Avre ou dans les environs du domaine des Evis.</p>
-    <p class="mb-4">Voici un liste de logements qui nous ont été recommandés:</p>
-    <ul class="list-disc list-inside">
-      <li>Manoir des Tuileries du Buisson (Booking)</li>
-      <li>Hotel Le Saumon (Booking)</li>
-      <li>L'orée du perche (Airbnb: chambre 1, chambre 2, chambre 3)</li>
-      <li>Gîte : L'invit' 9-11 voyageurs (Airbnb)</li>
-      <li>La grange Mirabelle  8 voyageurs (Airbnb)</li>
-      <li>Gite Du Haut brou 4 voyageurs (Airbnb)</li>
-      <li>Chez Mamisa 4 voyageurs (Airbnb)</li>
-      <li>Demeure d'hôte de la Courangère 14 voyageurs (Airbnb)</li>
-    </ul>
-    <p class="mb-4">De nombreux autres logements sont disponibles sur Booking et Airbnb.</p>
-    <p class="mb-4">Pensez à réserver rapidement!</p>
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+            <h1 class="text-4xl font-bold font-title py-4">Se loger dans les environs</h1>
+            <p class="mb-4">Une grande variété de logements sont présents dans les environs du domaine des Evis.</p>
+            <p class="mb-4">Nous vous conseillons de réserver un logement à Verneuil-sur-Avre ou dans les environs du domaine des Evis.</p>
+            <p class="mb-4">Voici un liste de logements qui nous ont été recommandés:</p>
+            <ul class="list-disc list-inside">
+              <li>Manoir des Tuileries du Buisson (Booking)</li>
+              <li>Hotel Le Saumon (Booking)</li>
+              <li>L'orée du perche (Airbnb: chambre 1, chambre 2, chambre 3)</li>
+              <li>Gîte : L'invit' 9-11 voyageurs (Airbnb)</li>
+              <li>La grange Mirabelle  8 voyageurs (Airbnb)</li>
+              <li>Gite Du Haut brou 4 voyageurs (Airbnb)</li>
+              <li>Chez Mamisa 4 voyageurs (Airbnb)</li>
+              <li>Demeure d'hôte de la Courangère 14 voyageurs (Airbnb)</li>
+            </ul>
+            <p class="mb-4">De nombreux autres logements sont disponibles sur Booking et Airbnb.</p>
+            <p class="mb-4">Pensez à réserver rapidement!</p>
+        </div>
+        <div>
+            <img class="rounded-lg" src="{{ get_url(path="img/logements.png") }}" />
+        </div>
+
   </div>
 
-  <div class="container mx-auto px-4 py-8 bg-gray-200">
-    <h1 class="text-4xl font-bold mb-4">Visiter le perche</h1>
-    <p class="mb-4">Le perche est une fabuleuse région a découvrir. Voici quelques points d'intérêt  notables:</p>
-    <ul class="list-disc list-inside">
-      <li>Mortagne-au-Perche</li>
-      <li>Belleme</li>
-      <li>Le parc naturel regional du Perche</li>
-      <li>Nogent-le-Rotrou</li>
-    </ul>
-    <p class="mb-4">RDV sur le sites suivant pour plus d'informations:</p>
-    <ul class="list-disc list-inside">
-      <li><a href="https://www.normandie-tourisme.fr/les-incontournables/le-perche/" class="underline">https://www.normandie-tourisme.fr/les-incontournables/le-perche/</a></li>
-      <li><a href="http://www.perche-tourisme.fr/" class="underline">http://www.perche-tourisme.fr/</a></li>
-    </ul>
+  <div class="container mx-auto px-4 py-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+            <img class="rounded-lg" src="{{ get_url(path="img/perche.jpg") }}" />
+        </div>
+        <div>
+            <h1 class="text-4xl font-bold font-title py-4">Visiter le perche</h1>
+            <p class="mb-4">Le perche est une fabuleuse région a découvrir. Voici quelques points d'intérêt  notables:</p>
+            <ul class="list-disc list-inside">
+              <li>Mortagne-au-Perche</li>
+              <li>Belleme</li>
+              <li>Le parc naturel regional du Perche</li>
+              <li>Nogent-le-Rotrou</li>
+            </ul>
+            <p class="mb-4">RDV sur le sites suivant pour plus d'informations:</p>
+            <ul class="list-disc list-inside">
+              <li><a href="https://www.normandie-tourisme.fr/les-incontournables/le-perche/" class="underline">https://www.normandie-tourisme.fr/les-incontournables/le-perche/</a></li>
+              <li><a href="http://www.perche-tourisme.fr/" class="underline">http://www.perche-tourisme.fr/</a></li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="container mx-auto px-4 py-8 bg-gray-200">
-    <h1 class="text-5xl font-bold mb-2">Contact:</h1>
-    <p class="text-2xl font-bold mb-2">&nbsp;Marion: +33 6 79 17 97 95 (Whatsapp)</p>
-    <p class="text-2xl font-bold mb-2">&nbsp;Nicolas: +31 6 34 14 60 30</p>
-  </div>
 {% endblock content %}

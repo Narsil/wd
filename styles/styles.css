@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'BodoniStdBook';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/BodoniStdBook.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'ssbruney';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/ss-bruney.woff2) format('woff2');
+  }
+}

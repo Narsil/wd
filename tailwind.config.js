@@ -4,7 +4,13 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            "wd": "#A4261E"
+            "wd": "#A4261E",
+            "wd-light": "rgb(164 38 30 / 28%)",
+            "cream": "#F3EEEE"
+        },
+        fontFamily: {
+            'body': ['BodoniStdBook'],
+            'title': ['ssbruney'],
         },
     },
   },
