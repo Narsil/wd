@@ -10,6 +10,7 @@ module.exports = {
         },
         fontFamily: {
             'body': ['BodoniStdBook'],
+            'bodybold': ['BodoniStdBold'],
             'title': ['ssbruney'],
         },
     },
