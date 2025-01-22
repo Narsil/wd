@@ -1,14 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="w-full h-dvh">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9BjFCxWEUEsDtHAL4R13UAr2P8k6Z3gMDCknnauVfR8uXlw/viewform?embedded=true" class="h-full w-full" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 {% endblock content %}

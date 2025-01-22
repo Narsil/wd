@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="https://marionetnicolas.com/styles/styles.css" />
 </head>
 
-<body class="font-body h-screen">
+<body class="font-body h-dvh">
     <nav class="bg-wd border-gray-200 font-title">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-4">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">M&N</span>
         </a>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-white" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 1h15M1 7h15M1 13h15"/>
             </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="text-3xl font-medium flex flex-col p-8 md:p-8 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+          <ul class="text-3xl font-medium flex flex-col p-4 md:p-8 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
               <a href="/" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white" aria-current="page">Accueil</a>
             </li>
@@ -38,22 +38,17 @@
     </nav>
     <div class="bg-cream w-full">
       
-  <div class="w-full">
-    <h1 class="text-4xl font-title w-full font-bold p-4 text-center">Marion et Nicolas</h1>
-    <div class="flex flex-wrap items-center mb-4">
-      <div class="w-full md:w-1/2 text-center">
-        <p class="pb-4 mb-4">Répondez SVP pour participer à notre mariage!</p>
-        <a href="#" class="py-4 px-8 bg-blue-500 font-title font-bold text-white text-2xl rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">RSVP</a>
-      </div>
-      <div class="w-full md:w-1/2 mt-4 md:mt-0">
-        <img src="https://marionetnicolas.com/img/venue.png" alt="Venue" class="rounded-lg">
-      </div>
-    </div>
-    <div class="p-5 bg-wd text-white"> 
+  <div class="w-full relative h-full">
+    <img src="https://marionetnicolas.com/img/cucu.jpg" alt="Venue" class="rounded-lg w-full max-h-[600px] object-cover blur-[3px]">
+    <h1 class="text-xl md:text-5xl font-title text-white w-full font-bold p-4 text-center absolute top-0 md:top-5">Marion et Nicolas</h1>
+  <div class="w-full absolute text-center top-20 md:top-1/2">
+    <a href="/rsvp" class="py-4 px-10 bg-blue-500 font-title font-bold text-white text-2xl rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">RSVP</a>
+  </div>
+    <div class="px-5 md:px-20 py-10 bg-wd text-white"> 
         <h2 class="text-2xl text-center font-title font-bold mb-4">Programme</h2>
-        <p class="mb-2 text-bold text-xl">Samedi 20 Septembre 2025 - 16h</p>
+        <p class="text-bold text-xl">Samedi 20 Septembre 2025 - 16h</p>
         <p class="mb-4">La cérémonie aura lieu à 16h et sera suivie du vin d'honneur puis de la réception.</p>
-        <p class="mb-2 text-bold text-xl">Dimanche 21 Septembre 2025 - 12h</p>
+        <p class="text-bold text-xl">Dimanche 21 Septembre 2025 - 12h</p>
         <p>Nous nous retrouverons au domaine à partir de 12h pour un déjeuner.</p>
     </div> 
   </div>
@@ -64,6 +59,7 @@
         <p class="text-2xl font-bold mb-2">&nbsp;Marion: +33 6 79 17 97 95 (Whatsapp)</p>
         <p class="text-2xl font-bold mb-2">&nbsp;Nicolas: +31 6 34 14 60 30</p>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
