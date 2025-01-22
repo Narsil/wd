@@ -5,14 +5,17 @@
     <h1 class="text-4xl font-bold py-4 font-title">Se rendre au domaine</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div>
-        <img class="rounded-lg" src="{{ get_url(path="img/bug.jpg") }}" />
+
+        {% set image = resize_image(path="img/bug.jpg", height=400, op="fit_height") %}
+        <img class="rounded-lg" src="{{ image.url }}" />
         <h2 class="text-2xl font-bold mb-2">En voiture</h2>
         <p class="mb-2">Le Domaine des Evis est accessible en 2h15 de route depuis Paris.</p>
         <p class="mb-2">Google Maps <a href="#" class="underline">[LINK]</a></p>
         <p>Je propose des places disponibles dans ma voiture <a href="#" class="underline">[LINK]</a></p>
       </div>
       <div>
-        <img class="rounded-lg" src="{{ get_url(path="img/train2.jpg") }}" heigh="156px" width: "234px" class="overflow-hidden w-full">
+        {% set image = resize_image(path="img/train2.jpg", height=400, op="fit_height") %}
+        <img class="rounded-lg" src="{{ image.url }}" heigh="156px" width: "234px" class="overflow-hidden w-full">
         <h2 class="text-2xl font-bold mb-2">En train</h2>
         <p class="mb-2">La gare de Verneuil-Sur-Avre​ se situe à 12min de voiture du domaine.</p>
         <ul class="list-disc list-inside mb-2">
@@ -23,7 +26,8 @@
         </ul>
       </div>
         <div>
-            <img class="rounded-lg" src="{{ get_url(path="img/taxi.jpeg") }}" />
+            {% set image = resize_image(path="img/taxi.jpeg", height=400, op="fit_height") %}
+            <img class="rounded-lg" src="{{ image.url }}" />
           <h2 class="text-2xl font-bold mb-2">Retour de soirée</h2>
           <p class="mb-2">Une navette sera disponible la nuit du samedi entre 00h et 04h pour vous ramener à votre logement dans un rayon de 15min autour du lieu de la fête.</p>
         </div>
@@ -60,7 +64,8 @@
             <p class="mb-4">Pensez à réserver rapidement!</p>
         </div>
         <div>
-            <img class="rounded-lg" src="{{ get_url(path="img/logements.png") }}" />
+            {% set image = resize_image(path="img/logements.png", height=600, op="fit_height") %}
+            <img class="rounded-lg" src="{{ image.url }}" />
         </div>
 
   </div>
@@ -69,7 +74,8 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-            <img class="rounded-lg" src="{{ get_url(path="img/perche.jpg") }}" />
+            {% set image = resize_image(path="img/perche.jpg", height=600, op="fit_height") %}
+            <img class="rounded-lg" src="{{ image.url }}" />
         </div>
         <div>
             <h1 class="text-4xl font-bold font-title py-4">Visiter le perche</h1>

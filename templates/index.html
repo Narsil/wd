@@ -2,7 +2,8 @@
 
 {% block content %}
   <div class="w-full relative h-full">
-    <img src="{{ get_url(path="img/cucu.jpg") | safe }}" alt="Venue" class="rounded-lg w-full max-h-[600px] object-cover blur-[3px]">
+    {% set image = resize_image(path="img/front.jpg", width=900, height=600, op="fit") %}
+    <img src="{{ image.url }}" alt="Venue" class="rounded-lg w-full max-h-[600px] object-cover blur-[3px]">
     <h1 class="text-xl md:text-5xl font-title text-white w-full font-bold p-4 text-center absolute top-0 md:top-5">Marion et Nicolas</h1>
   <div class="w-full absolute text-center top-20 md:top-1/2">
     <a href="/rsvp" class="py-4 px-10 bg-blue-500 font-title font-bold text-white text-2xl rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">RSVP</a>
@@ -34,7 +35,8 @@
         <p>Nous nous retrouverons au domaine à partir de 12h pour un déjeuner.</p>
     </div> 
     <div> 
-        <img src="{{ get_url(path="img/venue.png") | safe }}" alt="Venue" class="rounded-lg max-h-[400px]">
+        {% set image = resize_image(path="img/venue.png", height=400, op="fit_height") %}
+        <img src="{{ image.url }}" alt="Venue" class="rounded-lg max-h-[400px]">
     </div> 
   </div> 
 {% endblock content %}
